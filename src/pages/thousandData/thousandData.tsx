@@ -30,7 +30,7 @@ export const ThousandData = () => {
 
   return (
     <>
-      <div className=" pt-5 flex flex-row gap-5 pb-5 flex-wrap justify-center items-center">
+      <div className=" bg-gray-100 pt-5 flex flex-row gap-5 pb-5 flex-wrap justify-center items-center">
         {univ.map((universities: univ) => (
           <div
             key={universities.name}
