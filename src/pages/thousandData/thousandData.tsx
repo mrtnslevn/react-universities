@@ -39,7 +39,7 @@ export const ThousandData = () => {
             <img
               src={universities.imgUrl}
               onError={(e) => {
-                // e.onerror = null;
+                onerror = null;
                 e.currentTarget.src = imgUrl;
               }}
               height={"100px"}
