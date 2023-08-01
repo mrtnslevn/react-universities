@@ -8,7 +8,7 @@ export const HundredData = () => {
   const [univ, setUniv] = useState<univ[] | null>(null);
   const [error, setError] = useState(null);
   const imgUrl =
-    "https://logo.clearbit.com/https://svelte.dev?size=100&format=png";
+    "https://logo.clearbit.com/https://svelte.dev?size=50&format=png";
   useEffect(() => {
     axios
       .get(`${BASE_URL}/100`)

@@ -8,7 +8,7 @@ export const TenData = () => {
   const [univ, setUniv] = useState<univ[] | null>(null);
   const [error, setError] = useState(null);
   const imgUrl =
-    "https://logo.clearbit.com/https://svelte.dev?size=100&format=png";
+    "https://logo.clearbit.com/https://svelte.dev?size=50&format=png";
   //   const fallbackImage =
   //     "https://ik.imagekit.io/demo/tr:di-medium_cafe_B1iTdD0C.jpg/non_existent_image.jpg";
   useEffect(() => {
