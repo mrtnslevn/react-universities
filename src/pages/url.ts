@@ -1,1 +1,2 @@
-export const BASE_URL: string = "https://jittery-bat-cap.cyclic.cloud/univ";
+export const BASE_URL: string =
+  "https://2299-140-213-169-127.ngrok-free.app/univ";

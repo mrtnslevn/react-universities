@@ -1,19 +1,17 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { BASE_URL } from "..";
 import { univ } from "../../interface/interface";
 import { MyChart } from "../../components";
+import { BASE_URL } from "..";
 
-export const TenData = () => {
+export const FiftyData = () => {
   const [univ, setUniv] = useState<univ[] | null>(null);
   const [error, setError] = useState(null);
   const imgUrl =
     "https://logo.clearbit.com/https://svelte.dev?size=50&format=png";
-  //   const fallbackImage =
-  //     "https://ik.imagekit.io/demo/tr:di-medium_cafe_B1iTdD0C.jpg/non_existent_image.jpg";
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/10`)
+      .get(`${BASE_URL}/50`)
       .then((response) => {
         setUniv(response.data);
         console.log(univ);
@@ -49,14 +47,14 @@ export const TenData = () => {
             <p>
               {universities.country}({universities.alpha_two_code})
             </p>
-            <p className="">
+            {/* <p className="">
               domains:{" "}
               {universities.domains.map((domains: string) => `${domains} `)}
             </p>
             <p>
               Web Pages:{" "}
               {universities.web_pages.map((web: string) => `${web} `)}
-            </p>
+            </p> */}
             <p className="text-justify pt-2">{universities.paragrapgh}</p>
             <MyChart chartData={universities.chartData} />
           </div>

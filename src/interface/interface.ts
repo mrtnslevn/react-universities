@@ -3,6 +3,7 @@ export interface Error {
 }
 
 export interface univ {
+  id: number;
   alpha_two_code: string;
   country: string;
   domains: string[];

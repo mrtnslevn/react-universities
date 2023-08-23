@@ -4,14 +4,14 @@ import { univ } from "../../interface/interface";
 import { MyChart } from "../../components";
 import { BASE_URL } from "..";
 
-export const HundredData = () => {
+export const EightHundredData = () => {
   const [univ, setUniv] = useState<univ[] | null>(null);
   const [error, setError] = useState(null);
   const imgUrl =
     "https://logo.clearbit.com/https://svelte.dev?size=50&format=png";
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/100`)
+      .get(`${BASE_URL}/890`)
       .then((response) => {
         setUniv(response.data);
         console.log(univ);
@@ -40,21 +40,21 @@ export const HundredData = () => {
                 // e.onerror = null;
                 e.currentTarget.src = imgUrl;
               }}
-              height={"50px"}
-              width={"50px"}
+              height={"100px"}
+              width={"100px"}
             />
             <p className=" pt-3">{universities.name}</p>
             <p>
               {universities.country}({universities.alpha_two_code})
             </p>
-            <p className="">
+            {/* <p className="">
               domains:{" "}
               {universities.domains.map((domains: string) => `${domains} `)}
             </p>
             <p>
               Web Pages:{" "}
               {universities.web_pages.map((web: string) => `${web} `)}
-            </p>
+            </p> */}
             <p className="text-justify pt-2">{universities.paragrapgh}</p>
             <MyChart chartData={universities.chartData} />
           </div>
