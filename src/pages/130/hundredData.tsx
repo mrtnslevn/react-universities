@@ -40,8 +40,8 @@ export const HundredData = () => {
                 // e.onerror = null;
                 e.currentTarget.src = imgUrl;
               }}
-              height={"50px"}
-              width={"50px"}
+              height={"100px"}
+              width={"100px"}
             />
             <p className=" pt-3">{universities.name}</p>
             <p>

@@ -49,14 +49,14 @@ export const ThousandData = () => {
             <p>
               {universities.country}({universities.alpha_two_code})
             </p>
-            {/* <p className="">
+            <p className="">
               domains:{" "}
               {universities.domains.map((domains: string) => `${domains} `)}
             </p>
             <p>
               Web Pages:{" "}
               {universities.web_pages.map((web: string) => `${web} `)}
-            </p> */}
+            </p>
             <p className="text-justify pt-2">{universities.paragrapgh}</p>
             <MyChart chartData={universities.chartData} />
           </div>
